@@ -1,0 +1,41 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
+}
+
+
+
+public class Pacman
+{
+  private String color;
+  private String name; 
+  private static int points = 0;
+  private boolean ghost;
+  
+  public pacman(String name, String color){
+    this.name = name;
+    this.color = color;
+  }
+
+  public String getName()
+  {
+    return name;
+  }
+
+  public int getPoints()
+  {
+    return points;
+  }
+
+  public void gobble()
+  {
+    points+=10;
+  }
+
+}
+
+class Soldierpacman extends Pacman
+{
+
+}
